@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1240, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Noto Sans Thai',sans-serif}
+  html,body{background:#fff}
+  .page{width:1240px;margin:0 auto;position:relative}
+  .top{background:#0f172a;color:#fff;padding:14px 28px}
+  .b{font-size:18px;font-weight:700}.b .d{color:#22d3ee}
+  .b .s{font-weight:600;font-size:13px;color:#cbd5e1}
+  .r{float:right;font-size:12px;color:#cbd5e1;text-align:right;line-height:1.5}
+  .r b{color:#fff}
+  .cols{height:620px}
+  .left{width:300px;float:left;border-right:1px solid #e7ecf3;height:620px}
+  .lh{padding:13px 16px;font-weight:700;font-size:14px;border-bottom:1px solid #eef2f7}
+  .lh .c{float:right;font-size:12px;color:#64748b;font-weight:600}
+  .ci{padding:11px 16px;border-bottom:1px solid #f1f5f9}
+  .ci.active{background:#eef2ff}
+  .av{width:38px;height:38px;border-radius:50%;display:inline-block;vertical-align:middle;text-align:center;line-height:38px;color:#fff;font-weight:700;font-size:15px}
+  .cm{display:inline-block;vertical-align:middle;margin-left:10px;width:200px}
+  .cm .nm{font-weight:600;font-size:13px}
+  .cm .pr{font-size:11.5px;color:#94a3b8;margin-top:2px}
+  .badge{float:right;background:#ef4444;color:#fff;font-size:11px;border-radius:999px;padding:1px 7px;font-weight:700}
+  .tm{float:right;color:#94a3b8;font-size:11px}
+  .right{margin-left:300px;height:620px;background:#f8fafc}
+  .rh{background:#fff;padding:12px 22px;border-bottom:1px solid #e7ecf3}
+  .rh .nm{font-weight:700;font-size:15px}.rh .sub{font-size:12px;color:#64748b;margin-top:1px}
+  .rh .api{float:right;font-size:11px;color:#0e7490;background:#ecfeff;border:1px solid #a5f3fc;border-radius:999px;padding:3px 11px;font-weight:600;margin-top:5px}
+  .body{padding:18px 22px}
+  .pcard{background:#fff;border:1px solid #e7ecf3;border-radius:12px;padding:11px;margin-bottom:16px;max-width:430px}
+  .pcard .pi{display:inline-block;vertical-align:middle}
+  .pcard .pic{width:54px;height:54px;border-radius:9px;display:inline-block;vertical-align:middle;text-align:center;line-height:54px;font-size:26px;color:#fff;background:linear-gradient(135deg,#6366f1,#8b5cf6)}
+  .pcard .pn{font-weight:600;font-size:13px;margin-left:12px;display:inline-block;vertical-align:middle;max-width:330px}
+  .pcard .pp{color:#ef4444;font-weight:700;font-size:14px;margin-top:6px}
+  .pcard .tagp{font-size:11px;color:#64748b;background:#f1f5f9;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:5px}
+  .bq{margin-bottom:13px}
+  .bubble{display:inline-block;max-width:440px;padding:10px 14px;border-radius:14px;font-size:13px;line-height:1.5}
+  .cust .bubble{background:#fff;border:1px solid #e7ecf3;border-bottom-left-radius:4px}
+  .cust .t2{font-size:11px;color:#94a3b8;margin-top:4px}
+  .adm{text-align:right}
+  .adm .bubble{background:#2563eb;color:#fff;border-bottom-right-radius:4px;text-align:left}
+  .adm .who{font-size:11px;color:#64748b;margin-bottom:3px;font-weight:600}
+  .adm .t2{font-size:11px;color:#94a3b8;margin-top:4px}
+  .foot{position:absolute;bottom:0;left:300px;right:0;background:#fff;border-top:1px solid #e7ecf3;padding:10px 22px}
+  .lk{display:inline-block;background:#f1f5f9;border-radius:7px;padding:6px 12px;color:#94a3b8;font-size:12px;width:300px}
+  .ro{float:right;color:#16a34a;font-weight:600;font-size:11.5px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top"><span class="b">Chat Collector <span class="d">●</span> <span class="s">กล่องข้อความลูกค้า (อ่านผ่าน API)</span></span><span class="r"><b>ร้าน Hispeed Racing — อะไหล่แต่งมอเตอร์ไซค์</b><br>ตลาด: ไทย</span></div>
+  <div class="cols">
+    <div class="left">
+      <div class="lh">บทสนทนา <span class="c">26 วันนี้</span></div>
+      <div class="ci active"><span class="av" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">ส</span><span class="cm"><span class="badge">1</span><div class="nm">somchai_rider</div><div class="pr">ฝาสูบ 4 วาล์ว FILANO</div></span></div>
+      <div class="ci"><span class="av" style="background:linear-gradient(135deg,#10b981,#059669)">N</span><span class="cm"><span class="tm">11:05</span><div class="nm">nat_bigbike</div><div class="pr">ข้อเหวี่ยงแต่ง ชัก 3 มิล</div></span></div>
+      <div class="ci"><span class="av" style="background:linear-gradient(135deg,#f59e0b,#f97316)">ช</span><span class="cm"><span class="tm">10:46</span><div class="nm">chai_pcx</div><div class="pr">ชุดชามแต่ง PCX160</div></span></div>
+      <div class="ci"><span class="av" style="background:linear-gradient(135deg,#ec4899,#db2777)">ต</span><span class="cm"><span class="tm">11:12</span><div class="nm">tonkla_wave</div><div class="pr">เสื้อสูบ+ลูกสูบ WAVE110I</div></span></div>
+      <div class="ci"><span class="av" style="background:linear-gradient(135deg,#3b82f6,#2563eb)">B</span><span class="cm"><span class="tm">11:30</span><div class="nm">beam_sonic</div><div class="pr">ชุดคลัทช์โซนิค 6 แผ่น</div></span></div>
+    </div>
+    <div class="right">
+      <div class="rh"><span class="api">Customer Service API • อ่านอย่างเดียว</span><div class="nm">somchai_rider</div><div class="sub">กำลังสนทนาเรื่อง: HISPEED ฝาสูบ 4 วาล์ว FILANO, FAZZIO</div></div>
+      <div class="body">
+        <div class="pcard"><span class="pic">⚙️</span><span class="pn">HISPEED ฝาสูบ 4 วาล์ว รองรับลูก 57-66 มิล สำหรับ GRAND FILANO, FAZZIO</span><div class="pp">฿2,490</div><div class="tagp">SKU HS-4V-FZ • ลูกค้าแตะดูจากโพสต์</div></div>
+        <div class="bq cust"><div class="bubble">สวัสดีครับ สนใจฝาสูบตัวนี้ ใส่กับ fino125i ได้ไหมครับ</div><div class="t2">somchai_rider • 10:20</div></div>
+        <div class="bq adm"><div class="who">แอดมินร้าน</div><div class="bubble">รถลูกค้าปีอะไรครับ เดี๋ยวเช็กรุ่นที่ใส่ได้ให้นะครับ</div><div class="t2">10:21</div></div>
+        <div class="bq cust"><div class="bubble">fino125i ตัวปี 2022 ครับ อยากแต่งเพิ่มแรง</div><div class="t2">somchai_rider • 10:22</div></div>
+        <div class="bq adm"><div class="who">แอดมินร้าน</div><div class="bubble">ใส่ได้ครับ แนะนำใช้คู่กับลูกสูบ 60 มิล จะได้กำลังอัดพอดี เดี๋ยวส่งลิงก์ชุดให้ครับ</div><div class="t2">10:23</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="lk">พิมพ์ข้อความ… (ปิดใช้งาน — โหมดอ่านอย่างเดียว)</span><span class="ro">● ดึงข้อมูลผ่าน seller.customer_service</span></div>
+</div>
+</body>
+</html>
