@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>นโยบายความเป็นส่วนตัว — Chat Collector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans Thai',system-ui,sans-serif;color:#0f172a;line-height:1.75;
+       background:#f8fafc;padding:40px 16px}
+  .wrap{max-width:760px;margin:0 auto;background:#fff;border:1px solid #e7ecf3;
+        border-radius:16px;padding:40px 44px}
+  h1{font-size:26px;font-weight:700;margin-bottom:6px}
+  .upd{color:#64748b;font-size:14px;margin-bottom:24px}
+  h2{font-size:18px;font-weight:700;margin:26px 0 8px;color:#1e293b}
+  p,li{font-size:15.5px;color:#334155}
+  ul{margin:6px 0 6px 22px}
+  li{margin:3px 0}
+  a{color:#2563eb}
+  .note{margin-top:30px;padding:14px 16px;background:#f1f5f9;border-radius:10px;
+        font-size:13.5px;color:#64748b}
+  .pill{display:inline-block;background:#ecfeff;color:#0e7490;border:1px solid #a5f3fc;
+        border-radius:999px;padding:2px 10px;font-size:13px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>นโยบายความเป็นส่วนตัว — Chat Collector</h1>
+  <div class="upd">เครื่องมือภายในร้าน · ปรับปรุงล่าสุด 5 มิถุนายน 2026 · <span class="pill">seller.customer_service</span></div>
+
+  <h2>1. ผู้ควบคุมข้อมูล</h2>
+  <p>ร้าน Hispeed Racing (ผู้ขายบน TikTok Shop ตลาดไทย) · ติดต่อ: <a href="mailto:hispeedracingteam@gmail.com">hispeedracingteam@gmail.com</a></p>
+
+  <h2>2. ขอบเขต</h2>
+  <p>แอป “Chat Collector” เป็นเครื่องมือภายในของร้าน ใช้รวบรวมบทสนทนาในระบบแชทของร้านเราบน TikTok Shop เพื่อพัฒนาคุณภาพการบริการลูกค้า ใช้กับร้านของเราเองเท่านั้น</p>
+
+  <h2>3. ข้อมูลที่เก็บรวบรวม</h2>
+  <p>ผ่าน TikTok Shop Customer Service API (scope <code>seller.customer_service</code>) เราเข้าถึง:</p>
+  <ul>
+    <li>ข้อความสนทนาระหว่างลูกค้ากับแอดมินของร้าน</li>
+    <li>ชื่อที่แสดง/รหัสบทสนทนาของลูกค้า และเวลาส่งข้อความ</li>
+    <li>ข้อมูลการ์ดสินค้าในแชท (ชื่อสินค้า รูป รหัสสินค้า)</li>
+  </ul>
+  <p>เราเก็บเท่าที่จำเป็นต่อการทำตารางสรุปคำถาม–คำตอบเท่านั้น</p>
+
+  <h2>4. วัตถุประสงค์และฐานทางกฎหมาย (PDPA)</h2>
+  <ul>
+    <li>จัดทำสรุปคำถาม–คำตอบ เพื่อปรับปรุงคำตอบมาตรฐานและความเร็วในการบริการ</li>
+    <li>ฐานทางกฎหมาย: ประโยชน์โดยชอบด้วยกฎหมายของผู้ประกอบการ และ/หรือความยินยอมตามที่กฎหมายกำหนด</li>
+    <li>ไม่ใช้ข้อมูลเพื่อการตลาดเจาะจงบุคคลโดยไม่ได้รับความยินยอม</li>
+  </ul>
+
+  <h2>5. การจัดเก็บและความปลอดภัย</h2>
+  <p>จัดเก็บแบบเข้ารหัส จำกัดสิทธิ์เข้าถึงเฉพาะเจ้าของร้านและแอดมินที่ได้รับมอบหมาย เก็บ token/secret อย่างปลอดภัย ไม่เปิดเผยต่อบุคคลภายนอก</p>
+
+  <h2>6. ระยะเวลาเก็บรักษา</h2>
+  <p>เก็บข้อมูลแชทไม่เกิน 180 วัน แล้วลบหรือทำให้ไม่สามารถระบุตัวตน เว้นแต่กฎหมายกำหนดเป็นอย่างอื่น</p>
+
+  <h2>7. การเปิดเผยต่อบุคคลที่สาม</h2>
+  <p>ไม่มี — เราไม่ขาย ไม่แลกเปลี่ยน ไม่ส่งต่อข้อมูลแชทให้บุคคลภายนอก</p>
+
+  <h2>8. สิทธิของเจ้าของข้อมูล</h2>
+  <p>ลูกค้ามีสิทธิขอเข้าถึง แก้ไข ลบ คัดค้าน หรือระงับการใช้ข้อมูลของตน ติดต่อ <a href="mailto:hispeedracingteam@gmail.com">hispeedracingteam@gmail.com</a> เราจะดำเนินการตามที่ PDPA กำหนด</p>
+
+  <h2>9. การเพิกถอนการเชื่อมต่อ</h2>
+  <p>ร้านเพิกถอนสิทธิ์แอปได้ทุกเมื่อผ่านหน้า “จัดการการอนุญาต” ใน TikTok Shop เมื่อเพิกถอน แอปจะหยุดเข้าถึงข้อมูลทันที</p>
+
+  <h2>10. การเปลี่ยนแปลงนโยบาย</h2>
+  <p>หากมีการแก้ไข จะปรับวันที่ “ปรับปรุงล่าสุด” ด้านบน</p>
+
+  <div class="note">เอกสารนี้เป็นแม่แบบเพื่อความสะดวก ไม่ใช่คำแนะนำทางกฎหมาย ควรปรับให้ตรงการใช้งานจริง และถ้าจำเป็นปรึกษาผู้เชี่ยวชาญด้าน PDPA</div>
+</div>
+</body>
+</html>
