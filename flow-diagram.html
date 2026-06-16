@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Noto Sans Thai',sans-serif}
+  html,body{background:#f1f5f9}
+  .stage{width:1200px;margin:0 auto;padding:34px 36px;background:#fff}
+  h1{font-size:23px;font-weight:700;color:#0f172a}
+  .sub{font-size:13.5px;color:#64748b;margin:6px 0 26px}
+  .flow{display:flex;align-items:stretch;gap:0}
+  .step{flex:1;background:#f8fafc;border:1px solid #e7ecf3;border-radius:14px;padding:16px 14px;text-align:center;position:relative}
+  .step .ic{width:46px;height:46px;border-radius:12px;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff;font-weight:700}
+  .step .t{font-size:13.5px;font-weight:700;color:#0f172a;line-height:1.35}
+  .step .d{font-size:11.5px;color:#64748b;margin-top:5px;line-height:1.4}
+  .arrow{display:flex;align-items:center;justify-content:center;width:34px;color:#94a3b8;font-size:24px;flex:0 0 34px}
+  .badge{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;margin-top:8px}
+  .ro{background:#ecfeff;color:#0e7490}
+  .enc{background:#eef2ff;color:#4338ca}
+  .del{background:#fef2f2;color:#b91c1c}
+  .guard{margin-top:26px;background:#fffbeb;border:1px solid #fde68a;border-radius:14px;padding:16px 18px}
+  .guard .h{font-size:13.5px;font-weight:700;color:#92400e;margin-bottom:8px}
+  .guard ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 26px}
+  .guard li{font-size:12.5px;color:#78350f;position:relative;padding-left:20px}
+  .guard li:before{content:"✓";position:absolute;left:0;color:#16a34a;font-weight:700}
+  .foot{margin-top:18px;font-size:11.5px;color:#94a3b8;text-align:center}
+</style>
+</head>
+<body>
+<div class="stage">
+  <h1>การไหลของข้อมูล — Chat Collector (scope: seller.customer_service)</h1>
+  <div class="sub">อ่านอย่างเดียว · ใช้ภายในร้าน/ภายในแพลตฟอร์มเท่านั้น · เป็นไปตาม PDPA</div>
+
+  <div class="flow">
+    <div class="step">
+      <div class="ic" style="background:#0f172a">💬</div>
+      <div class="t">แชทลูกค้า–แอดมิน<br>บน TikTok Shop</div>
+      <div class="d">บทสนทนาเกิดในระบบแชทของร้าน</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="ic" style="background:#06b6d4">🔑</div>
+      <div class="t">Customer Service API<br>(read-only)</div>
+      <div class="d">Get Conversation / Messages เท่านั้น</div>
+      <div class="badge ro">อ่านอย่างเดียว</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="ic" style="background:#6366f1">🔒</div>
+      <div class="t">จัดเก็บแบบเข้ารหัส</div>
+      <div class="d">จำกัดสิทธิ์เฉพาะเจ้าของร้าน+แอดมิน</div>
+      <div class="badge enc">เข้ารหัส</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="ic" style="background:#10b981">📊</div>
+      <div class="t">จับคู่ + จัดหมวด<br>→ ตารางสรุป</div>
+      <div class="d">สินค้า / คำถาม / คำตอบ เพื่อพัฒนาบริการ</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="ic" style="background:#ef4444">🗑️</div>
+      <div class="t">ลบอัตโนมัติ<br>ภายใน ≤180 วัน</div>
+      <div class="d">หรือทำให้ไม่ระบุตัวตน</div>
+      <div class="badge del">ลบตามกำหนด</div>
+    </div>
+  </div>
+
+  <div class="guard">
+    <div class="h">หลักการคุ้มครองข้อมูล</div>
+    <ul>
+      <li>ใช้ภายในร้านของเราเองเท่านั้น</li>
+      <li>ไม่ติดต่อ/ชักชวนลูกค้านอกแพลตฟอร์ม</li>
+      <li>ไม่ขาย ไม่เปิดเผย ไม่ส่งต่อบุคคลที่สาม</li>
+      <li>ไม่ดึงเบอร์โทร/ที่อยู่/ข้อมูลชำระเงิน</li>
+      <li>เพิกถอนสิทธิ์ได้ทุกเมื่อ</li>
+      <li>นโยบายความเป็นส่วนตัวเผยแพร่สาธารณะ</li>
+    </ul>
+  </div>
+  <div class="foot">Chat Collector – Customer Support · App ID 7647089606677661448 · ตลาดไทย (Local Seller)</div>
+</div>
+</body>
+</html>
